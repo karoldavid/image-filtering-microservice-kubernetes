@@ -14,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: karoldavid/simple-reverse-proxy
+    image: karoldavid/reverse-proxy
   udagram-frontend:
     build:
       context: ../../udagram-frontend  
