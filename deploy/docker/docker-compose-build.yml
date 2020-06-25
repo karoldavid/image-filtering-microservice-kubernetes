@@ -1,0 +1,21 @@
+version: '2.0'
+services:
+  udagram-user-api:
+    build:
+      context: ../../udagram-user-api
+      dockerfile: Dockerfile
+    image: karoldavid/udagram-user-api
+  udagram-feed-api:
+    build:
+      context: ../../udagram-feed-api
+      dockerfile: Dockerfile
+    image: karoldavid/udagram-feed-api
+  reverseproxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: karoldavid/simple-reverse-proxy
+  udagram-frontend:
+    build:
+      context: ../../udagram-frontend  
+    image: karoldavid/udagram-frontend
