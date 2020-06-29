@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: udagram-feed-api-svc
-  selfLink: /api/v1/namespaces/default/services/udagram-feed-api-svc
+  name: udagram-feed-api
+  selfLink: /api/v1/namespaces/default/services/udagram-feed-api
   labels:
     service: udagram-feed-api
 spec:
