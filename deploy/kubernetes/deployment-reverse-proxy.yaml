@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-        - image: karoldavid/reverse-proxy
+        - image: karoldavid/udagram-reverse-proxy
           name: reverseproxy
           imagePullPolicy: Always
           resources:

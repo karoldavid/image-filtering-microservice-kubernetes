@@ -22,5 +22,5 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push karoldavid/udagram-user-api
   - docker push karoldavid/udagram-feed-api
-  - docker push karoldavid/reverse-proxy
+  - docker push karoldavid/udagram-reverse-proxy
   - docker push karoldavid/udagram-frontend

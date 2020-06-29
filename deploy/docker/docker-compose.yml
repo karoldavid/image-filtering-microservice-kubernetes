@@ -29,7 +29,7 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: $URL
   reverseproxy:
-    image: karoldavid/reverse-proxy
+    image: karoldavid/udagram-reverse-proxy
     ports:
       - 8080:8080
     restart: always

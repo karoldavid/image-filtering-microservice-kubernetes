@@ -13,7 +13,7 @@ services:
   reverseproxy:
     build:
       context: .
-    image: karoldavid/reverse-proxy
+    image: karoldavid/udagram-reverse-proxy
   udagram-frontend:
     build:
       context: ../../udagram-frontend  
