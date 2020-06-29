@@ -67,7 +67,7 @@ spec:
               key: POSTGRES_PASSWORD
         - name: POSTGRES_USERNAME
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: env-secret
               key: POSTGRES_USERNAME      
         volumeMounts:

@@ -53,7 +53,7 @@ spec:
               key: POSTGRES_PASSWORD
         - name: POSTGRES_USERNAME
           valueFrom:
-            configMapKeyRef:
-              name: env-config
+            secretKeyRef:
+              name: env-secret
               key: POSTGRES_USERNAME
       restartPolicy: Always

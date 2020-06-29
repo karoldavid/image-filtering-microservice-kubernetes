@@ -1,0 +1,485 @@
+Name:               ip-172-31-24-112.us-east-2.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.micro
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/nodegroup=demo
+                    eks.amazonaws.com/nodegroup-image=ami-073f227b0cd9507f9
+                    failure-domain.beta.kubernetes.io/region=us-east-2
+                    failure-domain.beta.kubernetes.io/zone=us-east-2b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-172-31-24-112.us-east-2.compute.internal
+                    kubernetes.io/os=linux
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 29 Jun 2020 20:49:01 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 29 Jun 2020 21:05:34 +0200   Mon, 29 Jun 2020 20:49:00 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 29 Jun 2020 21:05:34 +0200   Mon, 29 Jun 2020 20:49:00 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 29 Jun 2020 21:05:34 +0200   Mon, 29 Jun 2020 20:49:00 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 29 Jun 2020 21:05:34 +0200   Mon, 29 Jun 2020 20:49:21 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   172.31.24.112
+  ExternalIP:   18.222.209.12
+  Hostname:     ip-172-31-24-112.us-east-2.compute.internal
+  InternalDNS:  ip-172-31-24-112.us-east-2.compute.internal
+  ExternalDNS:  ec2-18-222-209-12.us-east-2.compute.amazonaws.com
+Capacity:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         2
+ ephemeral-storage:           10473452Ki
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      980068Ki
+ pods:                        4
+Allocatable:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         1930m
+ ephemeral-storage:           8578591524
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      571492Ki
+ pods:                        4
+System Info:
+ Machine ID:                 ec2dac00364a1b215c1cd7a62cf10c80
+ System UUID:                EC2DAC00-364A-1B21-5C1C-D7A62CF10C80
+ Boot ID:                    d3cd684a-c6f2-4ed5-a82f-f427759637a2
+ Kernel Version:             4.14.181-140.257.amzn2.x86_64
+ OS Image:                   Amazon Linux 2
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://19.3.6
+ Kubelet Version:            v1.16.8-eks-e16311
+ Kube-Proxy Version:         v1.16.8-eks-e16311
+ProviderID:                  aws:///us-east-2b/i-04ea421175f58328d
+Non-terminated Pods:         (3 in total)
+  Namespace                  Name                            CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                            ------------  ----------  ---------------  -------------  ---
+  default                    reverseproxy-666d85bcf-x6pv8    250m (12%)    500m (25%)  64Mi (11%)       1Gi (183%)     118m
+  kube-system                aws-node-744c2                  10m (0%)      0 (0%)      0 (0%)           0 (0%)         16m
+  kube-system                kube-proxy-p8gzw                100m (5%)     0 (0%)      0 (0%)           0 (0%)         16m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests    Limits
+  --------                    --------    ------
+  cpu                         360m (18%)  500m (25%)
+  memory                      64Mi (11%)  1Gi (183%)
+  ephemeral-storage           0 (0%)      0 (0%)
+  attachable-volumes-aws-ebs  0           0
+Events:
+  Type    Reason                   Age                From                                                     Message
+  ----    ------                   ----               ----                                                     -------
+  Normal  Starting                 16m                kubelet, ip-172-31-24-112.us-east-2.compute.internal     Starting kubelet.
+  Normal  NodeHasSufficientMemory  16m (x2 over 16m)  kubelet, ip-172-31-24-112.us-east-2.compute.internal     Node ip-172-31-24-112.us-east-2.compute.internal status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    16m (x2 over 16m)  kubelet, ip-172-31-24-112.us-east-2.compute.internal     Node ip-172-31-24-112.us-east-2.compute.internal status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     16m (x2 over 16m)  kubelet, ip-172-31-24-112.us-east-2.compute.internal     Node ip-172-31-24-112.us-east-2.compute.internal status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  16m                kubelet, ip-172-31-24-112.us-east-2.compute.internal     Updated Node Allocatable limit across pods
+  Normal  Starting                 16m                kube-proxy, ip-172-31-24-112.us-east-2.compute.internal  Starting kube-proxy.
+  Normal  NodeReady                16m                kubelet, ip-172-31-24-112.us-east-2.compute.internal     Node ip-172-31-24-112.us-east-2.compute.internal status is now: NodeReady
+
+
+Name:               ip-172-31-27-95.us-east-2.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.micro
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/nodegroup=demo
+                    eks.amazonaws.com/nodegroup-image=ami-073f227b0cd9507f9
+                    failure-domain.beta.kubernetes.io/region=us-east-2
+                    failure-domain.beta.kubernetes.io/zone=us-east-2b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-172-31-27-95.us-east-2.compute.internal
+                    kubernetes.io/os=linux
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 29 Jun 2020 20:49:01 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 29 Jun 2020 21:05:04 +0200   Mon, 29 Jun 2020 20:49:01 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 29 Jun 2020 21:05:04 +0200   Mon, 29 Jun 2020 20:49:01 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 29 Jun 2020 21:05:04 +0200   Mon, 29 Jun 2020 20:49:01 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 29 Jun 2020 21:05:04 +0200   Mon, 29 Jun 2020 20:49:21 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   172.31.27.95
+  ExternalIP:   3.128.179.192
+  Hostname:     ip-172-31-27-95.us-east-2.compute.internal
+  InternalDNS:  ip-172-31-27-95.us-east-2.compute.internal
+  ExternalDNS:  ec2-3-128-179-192.us-east-2.compute.amazonaws.com
+Capacity:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         2
+ ephemeral-storage:           10473452Ki
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      980068Ki
+ pods:                        4
+Allocatable:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         1930m
+ ephemeral-storage:           8578591524
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      571492Ki
+ pods:                        4
+System Info:
+ Machine ID:                 ec2f12271b7256475e944ff1b306d75e
+ System UUID:                EC2F1227-1B72-5647-5E94-4FF1B306D75E
+ Boot ID:                    18b0ec81-cb9a-45b2-9d77-c83d36932ea9
+ Kernel Version:             4.14.181-140.257.amzn2.x86_64
+ OS Image:                   Amazon Linux 2
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://19.3.6
+ Kubelet Version:            v1.16.8-eks-e16311
+ Kube-Proxy Version:         v1.16.8-eks-e16311
+ProviderID:                  aws:///us-east-2b/i-0896b6e2c90e66314
+Non-terminated Pods:         (3 in total)
+  Namespace                  Name                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                                 ------------  ----------  ---------------  -------------  ---
+  default                    udagram-user-api-5bdb57449f-mrgpl    250m (12%)    500m (25%)  64Mi (11%)       1Gi (183%)     14m
+  kube-system                aws-node-bf4sw                       10m (0%)      0 (0%)      0 (0%)           0 (0%)         16m
+  kube-system                kube-proxy-hxws9                     100m (5%)     0 (0%)      0 (0%)           0 (0%)         16m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests    Limits
+  --------                    --------    ------
+  cpu                         360m (18%)  500m (25%)
+  memory                      64Mi (11%)  1Gi (183%)
+  ephemeral-storage           0 (0%)      0 (0%)
+  attachable-volumes-aws-ebs  0           0
+Events:
+  Type    Reason                   Age                From                                                    Message
+  ----    ------                   ----               ----                                                    -------
+  Normal  Starting                 16m                kubelet, ip-172-31-27-95.us-east-2.compute.internal     Starting kubelet.
+  Normal  NodeHasSufficientMemory  16m (x2 over 16m)  kubelet, ip-172-31-27-95.us-east-2.compute.internal     Node ip-172-31-27-95.us-east-2.compute.internal status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    16m (x2 over 16m)  kubelet, ip-172-31-27-95.us-east-2.compute.internal     Node ip-172-31-27-95.us-east-2.compute.internal status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     16m (x2 over 16m)  kubelet, ip-172-31-27-95.us-east-2.compute.internal     Node ip-172-31-27-95.us-east-2.compute.internal status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  16m                kubelet, ip-172-31-27-95.us-east-2.compute.internal     Updated Node Allocatable limit across pods
+  Normal  Starting                 16m                kube-proxy, ip-172-31-27-95.us-east-2.compute.internal  Starting kube-proxy.
+  Normal  NodeReady                16m                kubelet, ip-172-31-27-95.us-east-2.compute.internal     Node ip-172-31-27-95.us-east-2.compute.internal status is now: NodeReady
+
+
+Name:               ip-172-31-32-221.us-east-2.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.micro
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/nodegroup=demo
+                    eks.amazonaws.com/nodegroup-image=ami-073f227b0cd9507f9
+                    failure-domain.beta.kubernetes.io/region=us-east-2
+                    failure-domain.beta.kubernetes.io/zone=us-east-2c
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-172-31-32-221.us-east-2.compute.internal
+                    kubernetes.io/os=linux
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 29 Jun 2020 20:49:07 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 29 Jun 2020 21:05:41 +0200   Mon, 29 Jun 2020 20:49:06 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 29 Jun 2020 21:05:41 +0200   Mon, 29 Jun 2020 20:49:06 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 29 Jun 2020 21:05:41 +0200   Mon, 29 Jun 2020 20:49:06 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 29 Jun 2020 21:05:41 +0200   Mon, 29 Jun 2020 20:49:27 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   172.31.32.221
+  ExternalIP:   3.21.166.131
+  Hostname:     ip-172-31-32-221.us-east-2.compute.internal
+  InternalDNS:  ip-172-31-32-221.us-east-2.compute.internal
+  ExternalDNS:  ec2-3-21-166-131.us-east-2.compute.amazonaws.com
+Capacity:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         2
+ ephemeral-storage:           10473452Ki
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      980068Ki
+ pods:                        4
+Allocatable:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         1930m
+ ephemeral-storage:           8578591524
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      571492Ki
+ pods:                        4
+System Info:
+ Machine ID:                 ec266489f1df9e81eb8e0bc7ac41f9ad
+ System UUID:                EC266489-F1DF-9E81-EB8E-0BC7AC41F9AD
+ Boot ID:                    bfdbe68a-738d-4237-b5d7-ab042a6b7b05
+ Kernel Version:             4.14.181-140.257.amzn2.x86_64
+ OS Image:                   Amazon Linux 2
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://19.3.6
+ Kubelet Version:            v1.16.8-eks-e16311
+ Kube-Proxy Version:         v1.16.8-eks-e16311
+ProviderID:                  aws:///us-east-2c/i-0e67bd1fc081527bd
+Non-terminated Pods:         (3 in total)
+  Namespace                  Name                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                                 ------------  ----------  ---------------  -------------  ---
+  default                    udagram-feed-api-58d67c8967-zjkdc    250m (12%)    500m (25%)  64Mi (11%)       1Gi (183%)     14m
+  kube-system                aws-node-r6vdg                       10m (0%)      0 (0%)      0 (0%)           0 (0%)         16m
+  kube-system                kube-proxy-4928m                     100m (5%)     0 (0%)      0 (0%)           0 (0%)         16m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests    Limits
+  --------                    --------    ------
+  cpu                         360m (18%)  500m (25%)
+  memory                      64Mi (11%)  1Gi (183%)
+  ephemeral-storage           0 (0%)      0 (0%)
+  attachable-volumes-aws-ebs  0           0
+Events:
+  Type    Reason                   Age                From                                                     Message
+  ----    ------                   ----               ----                                                     -------
+  Normal  Starting                 16m                kubelet, ip-172-31-32-221.us-east-2.compute.internal     Starting kubelet.
+  Normal  NodeHasSufficientMemory  16m (x2 over 16m)  kubelet, ip-172-31-32-221.us-east-2.compute.internal     Node ip-172-31-32-221.us-east-2.compute.internal status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    16m (x2 over 16m)  kubelet, ip-172-31-32-221.us-east-2.compute.internal     Node ip-172-31-32-221.us-east-2.compute.internal status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     16m (x2 over 16m)  kubelet, ip-172-31-32-221.us-east-2.compute.internal     Node ip-172-31-32-221.us-east-2.compute.internal status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  16m                kubelet, ip-172-31-32-221.us-east-2.compute.internal     Updated Node Allocatable limit across pods
+  Normal  Starting                 16m                kube-proxy, ip-172-31-32-221.us-east-2.compute.internal  Starting kube-proxy.
+  Normal  NodeReady                16m                kubelet, ip-172-31-32-221.us-east-2.compute.internal     Node ip-172-31-32-221.us-east-2.compute.internal status is now: NodeReady
+
+
+Name:               ip-172-31-46-130.us-east-2.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.micro
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/nodegroup=demo
+                    eks.amazonaws.com/nodegroup-image=ami-073f227b0cd9507f9
+                    failure-domain.beta.kubernetes.io/region=us-east-2
+                    failure-domain.beta.kubernetes.io/zone=us-east-2c
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-172-31-46-130.us-east-2.compute.internal
+                    kubernetes.io/os=linux
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sat, 20 Jun 2020 21:13:47 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 29 Jun 2020 21:05:12 +0200   Sat, 20 Jun 2020 21:13:46 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 29 Jun 2020 21:05:12 +0200   Sat, 20 Jun 2020 21:13:46 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 29 Jun 2020 21:05:12 +0200   Sat, 20 Jun 2020 21:13:46 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 29 Jun 2020 21:05:12 +0200   Sat, 20 Jun 2020 21:14:07 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   172.31.46.130
+  ExternalIP:   3.16.163.117
+  Hostname:     ip-172-31-46-130.us-east-2.compute.internal
+  InternalDNS:  ip-172-31-46-130.us-east-2.compute.internal
+  ExternalDNS:  ec2-3-16-163-117.us-east-2.compute.amazonaws.com
+Capacity:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         2
+ ephemeral-storage:           10473452Ki
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      980068Ki
+ pods:                        4
+Allocatable:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         1930m
+ ephemeral-storage:           8578591524
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      571492Ki
+ pods:                        4
+System Info:
+ Machine ID:                 ec264a9d608c015f1fbe4a4fde2db06a
+ System UUID:                EC264A9D-608C-015F-1FBE-4A4FDE2DB06A
+ Boot ID:                    dda4c8a1-e308-4e7d-87ff-2a0a49e572c8
+ Kernel Version:             4.14.181-140.257.amzn2.x86_64
+ OS Image:                   Amazon Linux 2
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://19.3.6
+ Kubelet Version:            v1.16.8-eks-e16311
+ Kube-Proxy Version:         v1.16.8-eks-e16311
+ProviderID:                  aws:///us-east-2c/i-0380fc4f457e2cb55
+Non-terminated Pods:         (4 in total)
+  Namespace                  Name                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                                 ------------  ----------  ---------------  -------------  ---
+  default                    udagram-frontend-65fb648778-ccs48    250m (12%)    500m (25%)  64Mi (11%)       1Gi (183%)     120m
+  kube-system                aws-node-49krs                       10m (0%)      0 (0%)      0 (0%)           0 (0%)         8d
+  kube-system                coredns-bd44f767b-mfntf              100m (5%)     0 (0%)      70Mi (12%)       170Mi (30%)    9d
+  kube-system                kube-proxy-rwhwg                     100m (5%)     0 (0%)      0 (0%)           0 (0%)         8d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests     Limits
+  --------                    --------     ------
+  cpu                         460m (23%)   500m (25%)
+  memory                      134Mi (24%)  1194Mi (213%)
+  ephemeral-storage           0 (0%)       0 (0%)
+  attachable-volumes-aws-ebs  0            0
+Events:                       <none>
+
+
+Name:               ip-172-31-5-54.us-east-2.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.micro
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/nodegroup=demo
+                    eks.amazonaws.com/nodegroup-image=ami-073f227b0cd9507f9
+                    failure-domain.beta.kubernetes.io/region=us-east-2
+                    failure-domain.beta.kubernetes.io/zone=us-east-2a
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-172-31-5-54.us-east-2.compute.internal
+                    kubernetes.io/os=linux
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 29 Jun 2020 20:48:56 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 29 Jun 2020 21:05:29 +0200   Mon, 29 Jun 2020 20:48:56 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 29 Jun 2020 21:05:29 +0200   Mon, 29 Jun 2020 20:48:56 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 29 Jun 2020 21:05:29 +0200   Mon, 29 Jun 2020 20:48:56 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 29 Jun 2020 21:05:29 +0200   Mon, 29 Jun 2020 20:49:16 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   172.31.5.54
+  ExternalIP:   3.136.20.51
+  Hostname:     ip-172-31-5-54.us-east-2.compute.internal
+  InternalDNS:  ip-172-31-5-54.us-east-2.compute.internal
+  ExternalDNS:  ec2-3-136-20-51.us-east-2.compute.amazonaws.com
+Capacity:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         2
+ ephemeral-storage:           10473452Ki
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      980068Ki
+ pods:                        4
+Allocatable:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         1930m
+ ephemeral-storage:           8578591524
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      571492Ki
+ pods:                        4
+System Info:
+ Machine ID:                 ec2e6fc96d3f6060900585827989e311
+ System UUID:                EC2E6FC9-6D3F-6060-9005-85827989E311
+ Boot ID:                    c95c5c9a-b94d-49fe-8c2c-c015d7a29102
+ Kernel Version:             4.14.181-140.257.amzn2.x86_64
+ OS Image:                   Amazon Linux 2
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://19.3.6
+ Kubelet Version:            v1.16.8-eks-e16311
+ Kube-Proxy Version:         v1.16.8-eks-e16311
+ProviderID:                  aws:///us-east-2a/i-0d6f183587d62eb58
+Non-terminated Pods:         (2 in total)
+  Namespace                  Name                CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                ------------  ----------  ---------------  -------------  ---
+  kube-system                aws-node-6m8cs      10m (0%)      0 (0%)      0 (0%)           0 (0%)         16m
+  kube-system                kube-proxy-glm52    100m (5%)     0 (0%)      0 (0%)           0 (0%)         16m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests   Limits
+  --------                    --------   ------
+  cpu                         110m (5%)  0 (0%)
+  memory                      0 (0%)     0 (0%)
+  ephemeral-storage           0 (0%)     0 (0%)
+  attachable-volumes-aws-ebs  0          0
+Events:
+  Type    Reason                   Age                From                                                   Message
+  ----    ------                   ----               ----                                                   -------
+  Normal  Starting                 16m                kubelet, ip-172-31-5-54.us-east-2.compute.internal     Starting kubelet.
+  Normal  NodeHasSufficientMemory  16m (x2 over 16m)  kubelet, ip-172-31-5-54.us-east-2.compute.internal     Node ip-172-31-5-54.us-east-2.compute.internal status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    16m (x2 over 16m)  kubelet, ip-172-31-5-54.us-east-2.compute.internal     Node ip-172-31-5-54.us-east-2.compute.internal status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     16m (x2 over 16m)  kubelet, ip-172-31-5-54.us-east-2.compute.internal     Node ip-172-31-5-54.us-east-2.compute.internal status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  16m                kubelet, ip-172-31-5-54.us-east-2.compute.internal     Updated Node Allocatable limit across pods
+  Normal  Starting                 16m                kube-proxy, ip-172-31-5-54.us-east-2.compute.internal  Starting kube-proxy.
+  Normal  NodeReady                16m                kubelet, ip-172-31-5-54.us-east-2.compute.internal     Node ip-172-31-5-54.us-east-2.compute.internal status is now: NodeReady
+
+
+Name:               ip-172-31-7-21.us-east-2.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=t3.micro
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/nodegroup=demo
+                    eks.amazonaws.com/nodegroup-image=ami-073f227b0cd9507f9
+                    failure-domain.beta.kubernetes.io/region=us-east-2
+                    failure-domain.beta.kubernetes.io/zone=us-east-2a
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=ip-172-31-7-21.us-east-2.compute.internal
+                    kubernetes.io/os=linux
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sat, 20 Jun 2020 21:13:41 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 29 Jun 2020 21:05:49 +0200   Sat, 20 Jun 2020 21:13:40 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 29 Jun 2020 21:05:49 +0200   Sat, 20 Jun 2020 21:13:40 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 29 Jun 2020 21:05:49 +0200   Sat, 20 Jun 2020 21:13:40 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 29 Jun 2020 21:05:49 +0200   Sat, 20 Jun 2020 21:14:00 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:   172.31.7.21
+  ExternalIP:   13.59.72.88
+  Hostname:     ip-172-31-7-21.us-east-2.compute.internal
+  InternalDNS:  ip-172-31-7-21.us-east-2.compute.internal
+  ExternalDNS:  ec2-13-59-72-88.us-east-2.compute.amazonaws.com
+Capacity:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         2
+ ephemeral-storage:           10473452Ki
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      980068Ki
+ pods:                        4
+Allocatable:
+ attachable-volumes-aws-ebs:  25
+ cpu:                         1930m
+ ephemeral-storage:           8578591524
+ hugepages-1Gi:               0
+ hugepages-2Mi:               0
+ memory:                      571492Ki
+ pods:                        4
+System Info:
+ Machine ID:                 ec2a1c8d7d660ad8595a5a9a91d5de52
+ System UUID:                EC2A1C8D-7D66-0AD8-595A-5A9A91D5DE52
+ Boot ID:                    e1ceec10-92c5-4f53-ab6c-543ebac1635c
+ Kernel Version:             4.14.181-140.257.amzn2.x86_64
+ OS Image:                   Amazon Linux 2
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://19.3.6
+ Kubelet Version:            v1.16.8-eks-e16311
+ Kube-Proxy Version:         v1.16.8-eks-e16311
+ProviderID:                  aws:///us-east-2a/i-09f88afab66a28a9b
+Non-terminated Pods:         (4 in total)
+  Namespace                  Name                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                                 ------------  ----------  ---------------  -------------  ---
+  default                    udagram-frontend-65fb648778-smfgw    250m (12%)    500m (25%)  64Mi (11%)       1Gi (183%)     129m
+  kube-system                aws-node-5dqps                       10m (0%)      0 (0%)      0 (0%)           0 (0%)         8d
+  kube-system                coredns-bd44f767b-rqkcz              100m (5%)     0 (0%)      70Mi (12%)       170Mi (30%)    9d
+  kube-system                kube-proxy-q85gd                     100m (5%)     0 (0%)      0 (0%)           0 (0%)         8d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests     Limits
+  --------                    --------     ------
+  cpu                         460m (23%)   500m (25%)
+  memory                      134Mi (24%)  1194Mi (213%)
+  ephemeral-storage           0 (0%)       0 (0%)
+  attachable-volumes-aws-ebs  0            0
+Events:                       <none>
