@@ -1,13 +1,5 @@
 version: "3"
 services:
-  reverseproxy:
-    image: karoldavid/reverse-proxy
-    ports:
-      - 8080:8080
-    restart: always
-    depends_on:
-      - udagram-user-api
-      - udagram-feed-api
   udagram-user-api:
     image: karoldavid/udagram-user-api
     volumes:
@@ -36,6 +28,14 @@ services:
       AWS_MEDIA_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
       URL: $URL
+  reverseproxy:
+    image: karoldavid/reverse-proxy
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - udagram-user-api
+      - udagram-feed-api
   udagram-frontend:
     image: karoldavid/udagram-frontend
     ports:
